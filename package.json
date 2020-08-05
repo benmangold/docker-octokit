@@ -1,0 +1,17 @@
+{
+  "name": "docker-octokit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "smoketest": "node app/smoketest.js",
+    "hi": "echo HELLO",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^18.0.3"
+  }
+}

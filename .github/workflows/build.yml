@@ -1,0 +1,23 @@
+---
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  packer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
+          docker build -t bmngld/docker-octokit .
+          docker push bmngld/docker-octokit
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}

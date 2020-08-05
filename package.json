@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "smoketest": "node app/smoketest.js",
-    "hi": "echo HELLO",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "app": "node app/app.js"
   },
   "keywords": [],
   "author": "",

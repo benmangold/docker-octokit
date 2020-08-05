@@ -1,3 +1,9 @@
+/**
+ * docker-octokit/smoketest.js
+ * ---
+ * make a GET request to a public repo to verify things are installed correctly
+ */
+
 const { Octokit } = require("@octokit/rest");
 const octokit = new Octokit()
 

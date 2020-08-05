@@ -14,10 +14,10 @@ COPY package.json /home/octokit
 
 COPY package-lock.json /home/octokit
 
-COPY app/smoketest.js /home/octokit/app/
+COPY smoketest.js /home/octokit
 
 RUN npm i
 
-RUN npm run smoketest
+RUN node smoketest.js
 
-CMD ["npm", "run", "smoketest"]
+RUN rm smoketest.js

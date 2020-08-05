@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  packer:
+  docker:
     runs-on: ubuntu-latest
 
     steps:

@@ -26,12 +26,11 @@ like this:
 ➜  docker run -e GITHUB_REPO -e GITHUB_USER bmngld/docker-octokit | tail -n +4 | jq
 {
   "status": 200,
-  "url": "https://api.github.com/repos/benmangold/hello-node",
-  ...
-  ...
-  ...
+  "url": "https://api.github.com/repos/benmangold/hello-node"...
 }
 ```
+
+### env config
 
 `GITHUB_PERSONAL_ACCESS_TOKEN` -  optional auth for private repos. make sure it has the permissions you want
 

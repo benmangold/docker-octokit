@@ -1,5 +1,7 @@
 FROM node:12
 
+RUN apt update; apt install jq -y;
+
 RUN useradd -ms /bin/bash octokit
 
 RUN chown -R octokit:octokit /home/octokit
@@ -24,4 +26,5 @@ RUN node smoketest.js
 
 RUN rm smoketest.js
 
-CMD npm run app
+CMD npm run app | tail -n +4 | jq .
+ 

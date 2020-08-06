@@ -4,8 +4,6 @@ const GITHUB_PERSONAL_ACCESS_TOKEN = process.env.GITHUB_PERSONAL_ACCESS_TOKEN
 const GITHUB_REPO = process.env.GITHUB_REPO
 const GITHUB_USER = process.env.GITHUB_USER
 
-
-
 const octokit = new Octokit({
     auth: GITHUB_PERSONAL_ACCESS_TOKEN,
     log: {

@@ -18,5 +18,5 @@ const smoketest = async () => {
 try {
     smoketest()
 } catch (e) {
-    console.log('docker-octokit/')
+    console.log(`docker-octokit/smoketest.js: ${e}`)
 }

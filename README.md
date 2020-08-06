@@ -23,7 +23,7 @@ like this:
 ```bash
 ➜  export GITHUB_REPO=hello-node
 ➜  export GITHUB_USER=benmangold
-➜  docker run -e GITHUB_REPO -e GITHUB_USER bmngld/octokit-docker | tail -n +4 | jq
+➜  docker run -e GITHUB_REPO -e GITHUB_USER bmngld/docker-octokit | tail -n +4 | jq
 {
   "status": 200,
   "url": "https://api.github.com/repos/benmangold/hello-node",

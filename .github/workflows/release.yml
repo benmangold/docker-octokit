@@ -1,5 +1,5 @@
 ---
-name: Build
+name: Release
 on:
   create:
     tags:
@@ -11,7 +11,7 @@ jobs:
       - name: Build
         run: |
           echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
-          docker build -t bmngld/docker-octokit:$GITHUB_REF .
+          docker build -t bmngld/docker-octokit:${GITHUB_REF/refs\/tags\//} .
           docker push bmngld/docker-octokit
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}

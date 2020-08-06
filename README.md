@@ -1,8 +1,6 @@
 # docker-octokit
 
-a docker image with octokit installed which will make a simple query for you based on env vars
-
-for use in ci, or at home
+a docker image with octokit installed
 
 built and published via github actions
 

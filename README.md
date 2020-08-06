@@ -4,6 +4,10 @@ a docker image with octokit installed
 
 built and published via github actions
 
+## releases
+
+`bmngld/docker-octokit:0.0.2` - Initial prerelease
+
 ## container config
 
 user - `octokit`
@@ -35,3 +39,4 @@ like this:
 `GITHUB_REPO` - github repo to be queried
 
 `GITHUB_OWNER` - owner of github repo
+
